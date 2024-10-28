@@ -1,3 +1,40 @@
 :root {
-    
+    --StrongCyan: hsl(172, 67%, 45%);
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
 }
+
+body {
+    font-family: "Space Mono", sans-serif;
+    background-color: var(--LightGrayishCyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+main {
+    background-color: var(--White);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.bill-container {
+    position: relative;
+    width: 88%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    text-align: right;
+}
+.bill-img {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.7rem;
+}
+

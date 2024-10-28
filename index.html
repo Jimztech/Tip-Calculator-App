@@ -20,26 +20,48 @@
 </head>
 
 <body>
+  <span class="top-span">SPLI<br>TTER</span>
+  <main>
+    <section class="first-subordinate">
+      <form>
+        <label for="bill">Bill</label>
+        <div class="bill-container">
+          <img 
+            src="./images/icon-dollar.svg" 
+            alt="dollar bill" 
+            class="bill-img"
+          >
+          <input type="text" id="bill" placeholder="0">
+        </div>
+      </form>
 
-  Bill
+      <span class="select-tip">Select Tip %</span>
+      <div class="tips">
+        <div class="first-set">
+          <span>5%</span>
+          <span>10%</span>
+          <span>15%</span>
+        </div>
+        <div class="second-set">
+          <span>25%</span>
+          <span>50%</span>
+          Custom
+        </div>
+      </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      Number of People
+    </section>
 
-  Number of People
+    <section class="second-subordinate">
+      Tip Amount
+      / person
 
-  Tip Amount
-  / person
+      Total
+      / person
 
-  Total
-  / person
-
-  Reset
-  
+      Reset
+    </section>
+  </main>  
+  <script src="./index.js"></script>
 </body>
 </html>
