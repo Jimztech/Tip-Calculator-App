@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
+    height: 100vh;
 }
 
 main {
@@ -23,18 +24,78 @@ main {
     border-radius: 0.8rem;
 }
 
+.first-subordinate {
+    border: 2px solid brown;
+}
+.second-subordinate {
+    border: 2px solid brown;
+    padding: 1rem;
+}
+
+
+/* Inputs */
 .bill-container {
     position: relative;
-    width: 88%;
+    width: 91%;
 }
 input[type=text] {
     width: 100%;
     padding: 0.5rem 0.8rem;
     text-align: right;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: var(--VeryLightGrayishCyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--VeryDarkCyan);
+}
+input[type="text"]::placeholder{
+    color: var(--VeryDarkCyan);
+    opacity: 0.5;
+}
+input[type="text"]:focus {
+    border: 2px solid var(--StrongCyan);
+    outline: none;
 }
 .bill-img {
     position: absolute;
     left: 0.5rem;
     top: 0.7rem;
 }
+.person {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.7rem;
+}
 
+/* Tips button design */
+.tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+.span-buttons {
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.625rem 0;
+    margin: 0.31rem 0;
+    background-color: var(--VeryDarkCyan);
+    color: var(--White);
+}
+.tips .hot-buttons {
+    margin-top: 5px;
+    height: 28px;
+    width: 83%;
+    background-color: var(--VeryLightGrayishCyan);
+    color: var(--VeryDarkCyan);
+}
+.tips .hot-buttons::placeholder {
+    color: var(--VeryDarkCyan);
+    opacity: 0.7;
+    text-align: center;
+}
+.select-tip, .some-numbers {
+    display: inline-block;
+    margin: 1rem 0;
+}

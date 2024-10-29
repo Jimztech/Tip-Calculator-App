@@ -37,29 +37,38 @@
 
       <span class="select-tip">Select Tip %</span>
       <div class="tips">
-        <div class="first-set">
-          <span>5%</span>
-          <span>10%</span>
-          <span>15%</span>
-        </div>
-        <div class="second-set">
-          <span>25%</span>
-          <span>50%</span>
-          Custom
-        </div>
+        <span class="span-buttons">5%</span>
+        <span class="span-buttons">10%</span>
+        <span class="span-buttons">15%</span>
+        <span class="span-buttons">25%</span>
+        <span class="span-buttons">50%</span>
+        <input type="text" id="" class="hot-buttons" placeholder="Custom">
       </div>
-
-      Number of People
+      <form>
+        <label for="numbers" class="some-numbers">Number of People</label>
+        <div class="bill-container">
+          <img 
+            src="./images/icon-person.svg" 
+            alt="person"
+            class="person"
+          >
+          <input type="text" class="numbers" id="numbers" placeholder="0">
+        </div>
+      </form>
     </section>
 
     <section class="second-subordinate">
-      Tip Amount
-      / person
-
-      Total
-      / person
-
-      Reset
+      <div class="first">
+        <p>Tip Amount</p>
+        <span>/ person</span>
+      </div>
+      <div class="second">
+        <p>Total</p>
+        <span>/ person</span>
+      </div>
+      <div class="third">
+        <button>Reset</button>
+      </div>
     </section>
   </main>  
   <script src="./index.js"></script>
