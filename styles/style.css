@@ -24,7 +24,15 @@ main {
     padding: 1.5rem;
     border-radius: 0.8rem;
 }
+.top-span {
+    padding: 1.5rem 0;
+}
 
+/* texts design */
+label, .select-tip {
+    font-weight: bold;
+    color: var(--GrayishCyan);
+}
 
 /* Inputs */
 .bill-container {
@@ -156,4 +164,61 @@ input[type="text"]:focus {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--StrongCyan);
+}
+
+
+/* Desktop view */
+@media (min-width: 56.25rem) {
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .first-subordinate {
+        padding: 2rem; 
+    }
+    .tips {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .span-buttons:nth-of-type(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .span-buttons:nth-of-type(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .span-buttons:nth-of-type(3) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .span-buttons:nth-of-type(4) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .span-buttons:nth-of-type(5) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .hot-buttons {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .span-buttons {
+        padding: 1.2rem;
+    }
+    .tips .hot-buttons {
+        padding: 1rem;
+    }
+
+    /* Inputs */
+    .bill-container {
+        width: 95%;
+    }
+
+    /* reset button design */
+    .third {
+        padding-top: 9rem;
+    }
 }
