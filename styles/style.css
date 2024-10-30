@@ -25,10 +25,6 @@ main {
     border-radius: 0.8rem;
 }
 
-.first-subordinate {
-    border: 2px solid brown;
-}
-
 
 /* Inputs */
 .bill-container {
@@ -51,7 +47,7 @@ input[type="text"]::placeholder{
     opacity: 0.5;
 }
 input[type="text"]:focus {
-    border: 2px solid var(--StrongCyan);
+    border: 0.125rem solid var(--StrongCyan);
     outline: none;
 }
 .bill-img {
@@ -82,7 +78,7 @@ input[type="text"]:focus {
     color: var(--White);
 }
 .tips .hot-buttons {
-    margin-top: 5px;
+    margin-top: 0.3rem;
     height: 28px;
     width: 83%;
     background-color: var(--VeryLightGrayishCyan);
@@ -98,15 +94,17 @@ input[type="text"]:focus {
     margin: 1rem 0;
 }
 
+
 /* Second subordinate design section */
 .second-subordinate {
-    border: 2px solid brown;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     padding: 1.3rem;
     background-color: var(--VeryDarkCyan);
+    margin-top: 2rem;
 }
 .first, .second {
     line-height: 0.8rem;
+    color: var(--White);
 } 
 .third {
     padding-top: 1.3rem;
@@ -114,18 +112,48 @@ input[type="text"]:focus {
     justify-content: center;
 }
 .amount, .total {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 1rem;
+    align-items: center;
+}
+.first{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.original-amount {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+}
+.second {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.original-total {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+}
+.slash-person{
+    opacity: 0.5;
 }
 .reset {
     padding: 1rem 7.18rem;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: var(--StrongCyan);
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     color: var(--VeryDarkCyan);
+}
+
+
+/* Dollar design */
+.tip-dollar {
+    width: 0.9rem;
+    height: 1.37rem;
+}
+.output {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--StrongCyan);
 }
