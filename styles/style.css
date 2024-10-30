@@ -16,6 +16,7 @@ body {
     align-items: center;
     padding: 2rem 0;
     height: 100vh;
+    max-width: 100%;
 }
 
 main {
@@ -26,10 +27,6 @@ main {
 
 .first-subordinate {
     border: 2px solid brown;
-}
-.second-subordinate {
-    border: 2px solid brown;
-    padding: 1rem;
 }
 
 
@@ -68,6 +65,7 @@ input[type="text"]:focus {
     top: 0.7rem;
 }
 
+
 /* Tips button design */
 .tips {
     display: grid;
@@ -98,4 +96,36 @@ input[type="text"]:focus {
 .select-tip, .some-numbers {
     display: inline-block;
     margin: 1rem 0;
+}
+
+/* Second subordinate design section */
+.second-subordinate {
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 1.3rem;
+    background-color: var(--VeryDarkCyan);
+}
+.first, .second {
+    line-height: 0.8rem;
+} 
+.third {
+    padding-top: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+.amount, .total {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+.reset {
+    padding: 1rem 7.18rem;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--StrongCyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--VeryDarkCyan);
 }
