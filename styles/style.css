@@ -14,15 +14,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem;
+    padding: 2rem;
     height: 100vh;
-    max-width: 100%;
+    overflow-x: hidden;
 }
 
 main {
     background-color: var(--White);
     padding: 1.5rem;
     border-radius: 0.8rem;
+    width: 100%;
 }
 .top-span {
     padding: 1.5rem 0;
