@@ -23,7 +23,7 @@ main {
     background-color: var(--White);
     padding: 1.5rem;
     border-radius: 0.8rem;
-    width: 100%;
+    max-width: 100vw;
 }
 .top-span {
     padding: 1.5rem 0;
@@ -39,6 +39,7 @@ label, .select-tip {
 .bill-container {
     position: relative;
     width: 91%;
+    max-width: 100%; /*Just added*/
 }
 input[type=text] {
     width: 100%;
