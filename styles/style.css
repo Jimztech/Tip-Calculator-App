@@ -14,15 +14,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem;
+    padding: 2rem 0;
     height: 100vh;
-    max-width: 100%;
 }
 
 main {
     background-color: var(--White);
     padding: 1.5rem;
     border-radius: 0.8rem;
+    width: 100%;
 }
 .top-span {
     padding: 1.5rem 0;
@@ -169,6 +169,9 @@ input[type="text"]:focus {
 
 /* Desktop view */
 @media (min-width: 56.25rem) {
+    body {
+        padding: 5rem;
+    }
     main {
         display: flex;
         flex-direction: row;
