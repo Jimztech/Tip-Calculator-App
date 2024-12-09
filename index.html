@@ -20,25 +20,53 @@
 </head>
 
 <body>
-  Bill
+  <main id="main">
+    <form>
+      <section class="main-part">
+        <div class="bill-container">
+          <label for="bill">Bill</label>
+          <input type="text" id="bill" placeholder="0">
+          <img src="./images/icon-dollar.svg" alt="dollar" class="bill-icon">
+        </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+        <div class="select-container">
+          <label for="select" class="select">Select Tip %</label>
+          <div class="tip-container">
+            <span class="tip-button">5%</span>
+            <span class="tip-button">10%</span>
+            <span class="tip-button">15%</span>
+            <span class="tip-button">25%</span>
+            <span class="tip-button">50%</span>
+            <input type="text" placeholder="Custom" id="custom">
+          </div>
+          <!-- <span><input type="text" placeholder="Custom" id="custom"></span> -->
+        </div>
+        <div class="number-container">
+          <label>Number of People</label>
+          <input type="text" id="number" placeholder="0">
+          <img src="./images/icon-person.svg" alt="person image" class="person-icon">
+        </div>
+      </section>
 
-  Number of People
+      <section class="submain-part">
+        <div class="tip-output">
+          <div class="first">
+            <p>Tip Amount<span class="break-line">/ person</span></p>
+          </div>
+          <span class="output">$0.00</span>
 
-  Tip Amount
-  / person
+          <div class="second">
+            <p>Total<span class="break-line">/ person</span></p>
+          </div>
+          <span class="output">$0.00</span>
+        </div>
 
-  Total
-  / person
-
-  Reset
-  
+        <div class="reset-container">
+          <input type="submit" value="Reset" id="submit-btn">
+        </div>
+      </section>
+    </form>
+  </main>
+  <script src="./index.js"></script>
 </body>
 </html>

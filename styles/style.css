@@ -7,3 +7,132 @@
     --VeryLightGrayishCyan: hsl(189, 41%, 97%);
     --White: hsl(0, 0%, 100%);
 }
+
+/* Main sections */
+body {
+    font-family: "Space Mono", sans-serif;
+    background-color: var(--LightGrayishCyan);
+    padding: 3rem 0;
+}
+main {
+    background-color: var(--White);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+.submain-part {
+    background: var(--VeryDarkCyan);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+
+.select, 
+.number-container,
+.submain-part {
+    margin-top: 1.5rem;
+}
+.bill-container,
+.number-container {
+    position: relative;
+}
+.bill-icon,
+.person-icon {
+    position: absolute;
+    right: 95%;
+    top: 60%;
+}
+
+
+/* General text design*/
+input[type=text] {
+    width: 92%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border: 1px solid var(--VeryLightGrayishCyan);
+    border-radius: 0.25rem;
+    background-color: var(--VeryLightGrayishCyan);
+    font-size: 1.5rem;
+}
+#bill, #number {
+    text-align: right;
+}
+label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--DarkGrayishCyan);
+}
+
+
+/* Tip-container and button design */
+.select {
+    display: block;
+    margin-bottom: 0.7rem;
+}
+.tip-button {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    max-height: 2rem;
+    background-color: var(--VeryDarkCyan);
+    color: var(--White);
+}
+.tip-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+#custom {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    max-height: 2rem;
+    width: 77%;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+/* Submain class designs */
+.tip-output {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.output {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--StrongCyan);
+}
+.break-line {
+    display: block;
+    opacity: 0.5;
+}
+p {
+    font-size: 1rem;
+    color: var(--White);
+}
+
+/* Reset button designs */
+.reset-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0.5rem 0;
+}
+input[type=submit] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: var(--StrongCyan);
+    border: none;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--VeryDarkCyan);
+}
