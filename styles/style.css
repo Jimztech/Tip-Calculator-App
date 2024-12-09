@@ -24,22 +24,10 @@ main {
     border-radius: 1rem;
     padding: 1rem;
 }
-
-
 .select, 
 .number-container,
 .submain-part {
     margin-top: 1.5rem;
-}
-.bill-container,
-.number-container {
-    position: relative;
-}
-.bill-icon,
-.person-icon {
-    position: absolute;
-    right: 95%;
-    top: 60%;
 }
 
 
@@ -53,6 +41,14 @@ input[type=text] {
     border-radius: 0.25rem;
     background-color: var(--VeryLightGrayishCyan);
     font-size: 1.5rem;
+}
+input[type=text]:focus {
+    outline: none;
+    border:  2px solid var(--StrongCyan);
+    color: var(--VeryDarkCyan);
+}
+#bill {
+    display: block;
 }
 #bill, #number {
     text-align: right;
@@ -85,7 +81,6 @@ label {
     gap: 1rem;
 }
 #custom {
-    border: 1px solid black;
     text-align: center;
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
@@ -135,4 +130,110 @@ input[type=submit] {
     font-size: 1rem;
     font-weight: 700;
     color: var(--VeryDarkCyan);
+}
+
+/* Logo image design */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.8rem 0;
+}
+.bill-container,
+.number-container {
+    position: relative;
+}
+.bill-icon,
+.person-icon {
+    position: absolute;
+    right: 95%;
+    top: 60%;
+}
+
+
+/* Design from 700px to 899px */
+@media (min-width: 43.75rem) and (max-width: 56.18rem) {
+    body {
+        padding: 1.5rem;
+    }
+    main {
+        padding: 2.5rem 2rem;
+    }
+
+    /* input and text designs */
+    input[type=text] {
+        width: 96%;
+        padding: 1.3rem 0.8rem;
+        font-size: 1.8rem;
+    }
+    .tip-button {
+        padding: 1.3rem 0.8rem;
+        font-size: 1.8rem;
+    }
+    #custom {
+        padding: 1.3rem 0.8rem;
+        width: 90%;
+    }
+    label {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    /* Submain part design */
+    .submain-part {
+        padding: 2rem 2.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .output {
+        font-size: 3rem;
+    }
+    input[type=submit] {
+        padding: 1.6rem 2rem;
+        font-size: 1.7rem;
+    }
+    form {
+        padding: 1rem 1.5rem;
+    }
+}
+
+
+/* Desktop designs from 900px and above */
+@media (min-width: 56.25rem) {
+    body {
+        padding: 3rem 8rem;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    /* Input and text designs */
+    input[type=text] {
+        width: 94%;
+    }
+    #custom {
+        width: 73%;
+    }
+    .output {
+        font-size: 2.5rem;
+    }
+
+    /* Tip container designs */
+    .tip-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* submain-part designs */
+    .submain-part {
+        padding: 2rem;
+    }
+    input[type=submit] {
+        margin-top: 4rem;
+        padding: 1.3rem;
+        font-weight: 800;
+    }
 }
