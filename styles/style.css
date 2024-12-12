@@ -243,3 +243,8 @@ input[type=submit] {
     display: none;
     color: red;
 }
+
+.tip-button.selected-tip {
+    background-color: var(--StrongCyan); 
+    color: var(--VeryDarkCyan);
+}
