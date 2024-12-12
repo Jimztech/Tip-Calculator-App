@@ -41,6 +41,8 @@ input[type=text] {
     border-radius: 0.25rem;
     background-color: var(--VeryLightGrayishCyan);
     font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--VeryDarkCyan);
 }
 input[type=text]:focus {
     outline: none;
@@ -242,6 +244,9 @@ input[type=submit] {
 .error-message {
     display: none;
     color: red;
+    position: absolute;
+    bottom: 75%;
+    left: 60%;
 }
 
 .tip-button.selected-tip {

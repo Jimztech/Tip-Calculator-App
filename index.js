@@ -64,10 +64,10 @@ Array.from(tipButtons).forEach((button) => {
         // Remove the 'selected-tip' class from all buttons
         Array.from(tipButtons).forEach((btn) => btn.classList.remove("selected-tip"));
 
-        // Add the 'selected-tip' class to the clicked button
+        // Add the 'selected-tip' class to the clicked button.
         button.classList.add("selected-tip");
 
-        // Clear the custom input value (to avoid conflicts)
+        // Clear the custom input value (to avoid conflicts).
         customInput.value = "";
 
         // Update the calculations
