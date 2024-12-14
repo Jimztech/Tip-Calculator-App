@@ -228,6 +228,9 @@ input[type=submit] {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    .tip-button {
+        cursor: pointer;
+    }
 
     /* submain-part designs */
     .submain-part {
@@ -237,6 +240,10 @@ input[type=submit] {
         margin-top: 4rem;
         padding: 1.3rem;
         font-weight: 800;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: var(--LightGrayishCyan);
     }
 }
 
