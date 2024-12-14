@@ -102,7 +102,9 @@ numPeopleInput.addEventListener("input", () => {
 const resetButton = document.getElementById("submit-btn"); 
 
 // Reset functionality
-resetButton.addEventListener("click", () => {
+resetButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    
     // Clear all input values
     billInput.value = "";
     numPeopleInput.value = "";
